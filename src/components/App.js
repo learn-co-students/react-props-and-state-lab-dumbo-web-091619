@@ -4,16 +4,13 @@ import Filters from './Filters'
 import PetBrowser from './PetBrowser'
 
 class App extends React.Component {
-  constructor() {
-    super()
-
-    this.state = {
+state = {
       pets: [],
       filters: {
         type: 'all'
       }
     }
-  }
+
 
   // GET fetch
   getPets = async () => {
